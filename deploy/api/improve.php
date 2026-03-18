@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // ===== API KEY =====
-$api_key = 'REMOVED';
+require_once __DIR__ . '/config.php';
 
 $input = json_decode(file_get_contents('php://input'), true);
 
